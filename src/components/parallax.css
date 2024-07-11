@@ -1,0 +1,22 @@
+/* .main_parl{
+    width: 50% !important;
+} */
+.skill-card {
+    /* border: 3px solid rgb(255, 255, 255) !important;  */
+  padding: 20px; /* add some padding for better readability */
+  /* background-color: var(--bg-color); */
+  z-index: 999;
+width: 50%;
+margin: auto auto;
+}
+.parl-1{
+    opacity: 0.4;
+}
+.pg-icon{
+    width: 20%;
+}
+.tool-bg{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}

@@ -1,0 +1,23 @@
+#root{
+  min-width: 100vw;
+  /* background-color: #E8E8E8 !important; */
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  overflow-x: hidden;
+}
+
+html[data-theme="dark"] {
+  --font-color: #E8E8E8 !important;
+  --bg-color: #181818 !important;
+  --card-color:#e5e5e5;
+  --card-font:black !important;
+  /* color: white !important; */
+}
+
+html[data-theme="light"] {
+  --font-color: #0c0c0c !important;
+  --bg-color: #f4f4f4 !important;
+  --card-color:#141414;
+  --card-font:#fff !important;
+  /* color: white !important; */
+}

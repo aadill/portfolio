@@ -1,0 +1,220 @@
+.active {
+  text-decoration: underline;
+}
+.abouts {
+  margin-top: 200px !important;
+  min-height: 80vh;
+}
+.abt_head {
+  display: flex;
+  margin-left: 5% !important;
+  margin-top: 3%;
+}
+.exp {
+  /* display: flex !important; */
+  /* align-items: start !important; */
+  /* justify-content: start !important; */
+  margin-left: 20%;
+  margin-bottom: 2%;
+  margin-right: 20%;
+}
+.tag-divider-about {
+    width: 90%;
+    height: 1px;
+    margin: 15px 20px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #7e8c9e;
+    border-radius: 20px;
+    background-color: #7e8c9e;
+}
+#root {
+  /* --bg-color1: #050505; */
+  --ms-fullscreen: #d3d3d5;
+  --orange: #da4d1d;
+  --blue: #2b26c3;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+i {
+  opacity: 0;
+  font-size: 18px;
+  color: #fff;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+h2 {
+  pointer-events: none;
+}
+
+/* body {
+  background-color: var(--bg-color1);
+  width: 100vw;
+  height: 100vh;
+} */
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .card-about {
+    position: relative;
+    width: 80%;
+    height: 70%;
+    background-color: var(--card-color);
+    overflow: hidden;
+    margin-bottom: 4px;
+
+    &:before {
+      content: "";
+      z-index: 99;
+      position: absolute;
+      top: -10px;
+      left: 32px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+      background-color: var(--bg-color);
+    }
+    &:after {
+      content: "";
+      z-index: 99;
+      position: absolute;
+      bottom: -10px;
+      left: 32px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+      background-color: var(--bg-color);
+    }
+    ul {
+      z-index: 99;
+      position: absolute;
+      left: 39px;
+      top: 5px;
+      list-style-type: none;
+      li {
+        width: 2px;
+        height: 2px;
+        border-radius: 2px;
+        margin: 6px 0;
+        background-color: var(--bg-color);
+      }
+    }
+    h2 {
+      z-index: 99;
+      font-family: "Poppins", sans-serif;
+      position: absolute;
+      bottom: 0;
+      right: 130px;
+      font-size: 60px;
+      font-weight: 700;
+      color: rgb(74, 73, 73);
+    }
+
+    .fa-arrow-right {
+      z-index: 100;
+      position: absolute;
+      right: 75px;
+      bottom: 25px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    p {
+      z-index: 99;
+      position: absolute;
+      top: 20px;
+      right: 70px;
+      color: var(--card-font);
+      opacity: 0.7;
+      font-size: 12px;
+      letter-spacing: 1px;
+      writing-mode: vertical-lr;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+    .pic {
+      /* z-index: 100; */
+      width: 70%;
+      height: 250px;
+      margin-left: 8%;
+      /* margin-right: 8% !important; */
+      color: var(--orange);
+      /* background-image: url($img-url); */
+      background-size: 100% 100%;
+      /* filter: grayscale(100%); */
+    }
+.pic .brief{
+    margin-top: 2% !important;
+    margin-right: 5% !important;
+    left: 10% !important;
+    writing-mode:horizontal-tb !important;
+
+}
+    
+    &:hover i {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    button {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      width: 30px;
+      height: 30px;
+      background-color: var(--orange);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+      mix-blend-mode: hard-light;
+
+      i{
+        font-size: 3rem;
+      }
+    }
+
+    &:hover button {
+      transform: scale(16.5);
+    }
+
+    &:hover p {
+      color: #1d1c1c;
+    }
+
+    &:hover .pic {
+      filter: grayscale(0);
+    }
+  }
+
+  .card2 {
+    button {
+      background-color: var(--blue);
+    }
+  }
+}
+
+.dr {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 100px;
+}

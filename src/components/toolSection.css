@@ -1,0 +1,12 @@
+.tool-icons{
+    width: 40%;
+}
+.tool-head{
+    display: flex;
+    align-items: start;
+    font-size: 16px;
+    font-weight: 700;
+}
+.pg-icon{
+    margin-right: 10px;
+}
